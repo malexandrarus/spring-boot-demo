@@ -2,6 +2,8 @@ package com.garmin.springbootdemo.service;
 
 import com.garmin.springbootdemo.api.DreamRunDto;
 
+import java.util.List;
+
 public interface DemoService {
     /**
      * This method is looking to put together the runner's 'dream run', which consists of the best time per lap from all the runs.
@@ -11,4 +13,6 @@ public interface DemoService {
      * @return the dream run values and total
      */
     DreamRunDto getDreamRun(Long userId);
+
+    List<Character> getDuplicateCharacters(String word);
 }

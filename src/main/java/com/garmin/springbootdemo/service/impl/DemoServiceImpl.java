@@ -21,7 +21,7 @@ public class DemoServiceImpl implements DemoService {
     static String[] race4 = new String[]{"4:42", "4:21", "4:05", "4:30", "4:51"};
     static String[] race5 = new String[]{"4:50", "4:52", "4:12", "4:50", "4:22"};
 
-    // TODO what would you change in this methods structure?
+    @Override
     public DreamRunDto getDreamRun(Long userId) {
         List<List<String>> allRunValues = Arrays.asList(Arrays.asList(race1), Arrays.asList(race2), Arrays.asList(race3), Arrays.asList(race4), Arrays.asList(race5));
 
@@ -52,10 +52,11 @@ public class DemoServiceImpl implements DemoService {
     }
 
     // TODO write a method that returns a list of duplicate characters from a given string and add a unit test for it
+    @Override
     public List<Character> getDuplicateCharacters(String word) {
         return null;
     }
 
     // TODO Create a method that reads and prints a property defined in the application.property file.
-    //  This method should run when starting the server
+    //  This can be called in the newly created POST controller method
 }
